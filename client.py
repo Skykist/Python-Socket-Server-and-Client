@@ -7,11 +7,11 @@ port = 9500
 sock.connect((server,port))
 
 """sock.send("hey, hi, hello".encode())
-message = sock.recv(1024)
+message = sock.recv(1024).decode()
 
 print(message)"""
 
 sock.send("Hello".encode())
-message = sock.recv(1024)
+message = sock.recv(1024).decode()
 
 print(message)
